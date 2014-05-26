@@ -67,6 +67,7 @@
     [self.imageCropView setImageToCrop:sourceImage];
     [self.imageCropView setResizableCropArea:self.resizeableCropArea];
     [self.imageCropView setCropSize:cropSize];
+    self.imageCropView.clipsToBounds = YES;
     [self.view addSubview:self.imageCropView];
 }
 
